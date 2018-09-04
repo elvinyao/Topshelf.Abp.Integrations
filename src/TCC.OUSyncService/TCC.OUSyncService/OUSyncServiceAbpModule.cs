@@ -12,4 +12,7 @@ namespace TCC.OUSyncService
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
         }
     }
+
+
+    //EF DbContext class.
 }

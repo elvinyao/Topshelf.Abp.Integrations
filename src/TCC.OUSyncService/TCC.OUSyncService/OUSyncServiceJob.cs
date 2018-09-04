@@ -2,26 +2,25 @@
 using Abp.Dependency;
 using Castle.Core.Logging;
 using Quartz;
+using TCC.OUSyncService.AppService;
 
 namespace TCC.OUSyncService
 {
     public class OUSyncServiceJob : IJob, ITransientDependency
     {
-        private readonly OUSyncServiceDependency _ouSyncServiceDependency;
+        private readonly IOUSyncAppService _ouSyncAppService;
         public ILogger Logger { get; set; }
 
-        public OUSyncServiceJob(OUSyncServiceDependency ouSyncServiceDependency)
+        public OUSyncServiceJob(IOUSyncAppService ouSyncAppService)
         {
-            _ouSyncServiceDependency = ouSyncServiceDependency;
+            _ouSyncAppService = ouSyncAppService;
             Logger = NullLogger.Instance;
         }
 
         public void Execute(IJobExecutionContext context)
         {
-            Logger.Debug("Job executed");
-            Console.WriteLine("Job executed");
-            _ouSyncServiceDependency.DoWork();
-            Logger.Debug("Job done");
+            _ouSyncAppService.DoOUSync();
+            _ouSyncAppService.DoEmployeesSync();
         }
     }
 }
