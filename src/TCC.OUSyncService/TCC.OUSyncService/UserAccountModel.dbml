@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="wsaf" Class="UserAccountModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.2.1.30;Initial Catalog=wsaf;Persist Security Info=True;User ID=sa" SettingsObjectName="TCC.OUSyncService.Properties.Settings" SettingsPropertyName="wsafConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AcUserView" Member="AcUserViews">
+    <Type Name="AcUserView">
+      <Column Name="LoginName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

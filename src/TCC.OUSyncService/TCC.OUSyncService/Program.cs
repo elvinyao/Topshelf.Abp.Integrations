@@ -1,8 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp;
+using Abp.Castle.Logging.Log4Net;
+using Castle.Facilities.Logging;
 using Quartz;
 using Topshelf;
 using Topshelf.Quartz;
@@ -14,8 +18,11 @@ namespace TCC.OUSyncService
     {
         static int Main(string[] args)
         {
-            using (var bootstrapper = new AbpBootstrapper())
+            using (var bootstrapper = AbpBootstrapper.Create<OUSyncServiceAbpModule>())
             {
+                bootstrapper.IocManager.IocContainer.AddFacility<LoggingFacility>(
+                    f => f.UseAbpLog4Net().WithConfig($"{GetAppPath()}log4net.config")
+                );
                 bootstrapper.Initialize();
 
                 return (int) HostFactory.Run(x =>
@@ -33,6 +40,14 @@ namespace TCC.OUSyncService
                     );
                 });
             }
+        }
+
+        private static string GetAppPath()
+        {
+            string appPath = Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]);
+            if (!appPath.EndsWith(Path.DirectorySeparatorChar.ToString()))
+                appPath += Path.DirectorySeparatorChar;
+            return appPath;
         }
     }
 }

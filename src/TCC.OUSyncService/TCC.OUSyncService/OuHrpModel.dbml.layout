@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.125, 24.375" name="OuHrpModel">
+  <DataContextMoniker Name="/OuHrpModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6cc2578c-c5c1-498f-ac6d-89529e5a2cc4" absoluteBounds="1.625, 1.125, 2, 4.3092167154947916">
+      <DataClassMoniker Name="/OuHrpModelDataContext/organization" />
+      <nestedChildShapes>
+        <elementListCompartment Id="705fc59a-5b4e-4948-93fd-5ab50ad41f85" absoluteBounds="1.6399999999999997, 1.585, 1.9700000000000002, 3.749216715494792" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a04c5b5c-d0cb-45b5-b57e-a817959cf31c" absoluteBounds="5.125, 2.25, 2, 20.940686442057292">
+      <DataClassMoniker Name="/OuHrpModelDataContext/UsrA01" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e0a267e-66ab-4793-9512-0bd5e75aa3f3" absoluteBounds="5.14, 2.71, 1.9700000000000002, 20.380686442057289" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a2f60b2-4289-4abb-b028-8ec6de819431" absoluteBounds="8.5, 3.125, 2, 20.940686442057292">
+      <DataClassMoniker Name="/OuHrpModelDataContext/RetA01" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e6dce52-4145-457b-be19-0cf268971a18" absoluteBounds="8.515, 3.585, 1.9700000000000002, 20.380686442057289" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29d50392-337e-496e-be29-5bebf017c7e5" absoluteBounds="1.25, 6.75, 2, 4.6788049316406246">
+      <DataClassMoniker Name="/OuHrpModelDataContext/UsrA44" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f3c4b30-c4df-4d80-8f21-63401f41578d" absoluteBounds="1.2650000000000001, 7.2100000000000009, 1.9700000000000002, 4.118804931640625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c70b6e2-4017-4f4e-8a00-ef1a43529622" absoluteBounds="11.875, 2.75, 2, 5.2331872558593746">
+      <DataClassMoniker Name="/OuHrpModelDataContext/UsrA09" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbb06f6b-5847-4985-b95a-5264c0f133af" absoluteBounds="11.89, 3.21, 1.9700000000000002, 4.673187255859375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

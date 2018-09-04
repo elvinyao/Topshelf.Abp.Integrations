@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ykchr" Class="OuHrpModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.2.1.6;Initial Catalog=ykchr;Persist Security Info=True;User ID=yksoft" SettingsObjectName="TCC.OUSyncService.Properties.Settings" SettingsPropertyName="ykchrConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.organization" Member="organizations">
+    <Type Name="organization">
+      <Column Name="codesetid" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="codeitemid" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="codeitemdesc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="parentid" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="childid" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="grade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="A0000" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pos_cond" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="invalid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="flag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="layer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="corcode" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="end_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="start_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="view_chart" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GUIDKEY" Type="System.String" DbType="VarChar(38)" CanBeNull="true" />
+      <Column Name="levelA0000" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsrA01" Member="UsrA01s">
+    <Type Name="UsrA01">
+      <Column Name="A0000" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="A0100" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="B0110" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="E01A1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="A0111" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="A0141" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="A0107" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0177" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="A0114" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="A0117" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="A0121" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="A01Z0" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C0181" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="A0171" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="CreateUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModTime1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserPassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="C01TC" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="C01WC" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C01XC" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="C01YC" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C01ZC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZK" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZM" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C01ZN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZQ" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="E0122" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="A0144" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0101" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="A0151" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C01ZZ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Groups" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0102" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0103" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="A0127" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C010B" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="C010C" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C010D" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="C0183" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C010F" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="A0124" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0184" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0110" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="C010O" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011A" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0164" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="C010S" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C010T" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C010X" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="A0131" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C010U" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C010V" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZU" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0118" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0119" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C011E" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0101" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011G" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011H" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C011I" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011J" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="A0174" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C011K" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C011L" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C011M" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="A0154" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0104" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="GUIDKEY" Type="System.String" DbType="VarChar(38)" CanBeNull="true" />
+      <Column Name="C011V" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011N" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011Y" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="C011Z" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C0120" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C0122" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0181" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C0121" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C0123" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0125" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CCCCC" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CDDDD" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012D" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C012E" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012G" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012H" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012I" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012J" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="C012L" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C012M" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012N" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C012B" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C012C" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C012K" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C012P" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012O" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012Q" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C012R" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C012S" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0104" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0105" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RetA01" Member="RetA01s">
+    <Type Name="RetA01">
+      <Column Name="A0000" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="A0100" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="B0110" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="E01A1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="A0111" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="A0141" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="A0107" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0177" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="A0114" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="A0117" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="A0121" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="A01Z0" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C0181" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="A0171" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="CreateUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModTime1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserPassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="C01TC" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="C01WC" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C01XC" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="C01YC" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C01ZC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZK" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZM" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C01ZN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C01ZQ" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="E0122" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="A0144" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0101" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="A0151" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C01ZZ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Groups" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0102" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0103" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="A0127" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C010B" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="C010C" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C010D" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="C0183" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C010F" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="A0124" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0184" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0110" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="C010O" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011A" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0164" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="C010S" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C010T" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C010X" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="A0131" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C010U" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C010V" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C01ZU" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0118" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0119" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C011E" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0101" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011G" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011H" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C011I" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011J" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="A0174" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C011K" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="C011L" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C011M" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="A0154" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0104" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="GUIDKEY" Type="System.String" DbType="VarChar(38)" CanBeNull="true" />
+      <Column Name="C011V" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011N" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C011Y" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="C011Z" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C0120" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C0122" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="A0181" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C0121" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C0123" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0125" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CCCCC" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CDDDD" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012D" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C012E" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012G" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012H" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012I" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012J" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="C012L" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C012M" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012N" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="C012B" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C012C" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C012K" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C012P" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012O" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C012Q" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C012R" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C012S" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="C0104" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0105" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsrA44" Member="UsrA44s">
+    <Type Name="UsrA44">
+      <Column Name="A0100" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="I9999" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="C4401" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="C4402" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="C4403" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="C4404" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C4405" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C4406" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C4407" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C4408" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="C4409" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreateUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Id" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="sealflag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C440A" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C440B" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GUIDKEY" Type="System.String" DbType="VarChar(38)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsrA09" Member="UsrA09s">
+    <Type Name="UsrA09">
+      <Column Name="A0100" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="I9999" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="E0904" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="E0931" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="E0934" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="E0921" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="CreateUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModUserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Id" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="C0901" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0902" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="C0903" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="C0904" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="E0911" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="C0905" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="I0000" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="C0906" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0907" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="C0908" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GUIDKEY" Type="System.String" DbType="VarChar(38)" CanBeNull="true" />
+      <Column Name="C0909" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
